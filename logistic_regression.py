@@ -6,6 +6,7 @@ TRAIN_DIR = 'train.csv'
 TEST_DIR = 'test.csv'
 Num_Epoch = 2236
 ALPHA = 3e-2
+
 def getHypothesis(Theta,X):
     Z = np.matmul(X,Theta)
     Y_Predicted = ut.sigmoid(Z)
