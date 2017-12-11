@@ -21,6 +21,8 @@ def optimiseTheta(X,Theta,Y_Real,Y_Predicted):
     Theta += ALPHA*np.dot(X,e)
     return Theta
 
+print ("Training Complete")
+
 train_x,train_y = ut.getData(TRAIN_DIR)
 train_x = np.array(train_x,np.float32)
 train_y = np.array(train_y,np.float32)
